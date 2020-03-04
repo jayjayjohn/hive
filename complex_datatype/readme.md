@@ -8,6 +8,8 @@ create table Temperature(date string,city string,MyTemp array<double>)
 row format delimited 
 fields terminated by ‘\t’ 
 collection items terminated by ‘,’;
+
+load data local inpath ‘/home/jay/temp.txt’ into table Temperature;
 ```
 
 ### map in a column 
