@@ -51,7 +51,7 @@ Hive actually supports eight levels of delimiters, corresponding to ASCII codes 
 For your case delimiter for items in nested Array of Map datatype field sabu will be '\004' as Map Key Delimiter is '\003' (Overridden as ':').
 
 So you can write your input file as following format:
-```
+
 1|JOHN|abu1/abu2|key1:1'\004'2'\004'3/key2:6'\004'7'\004'8
 Output of SELECT * FROM test_stg; will be:
 
