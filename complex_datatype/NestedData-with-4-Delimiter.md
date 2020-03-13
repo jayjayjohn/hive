@@ -1,4 +1,7 @@
 https://stackoverflow.com/questions/18812025/hive-nested-array-in-map-data-type
+
+https://stackoverflow.com/questions/45647111/apache-hive-complex-datatype-mapstring-struct-not-working
+
 Reference: Hadoop The Definitive Guide - Chapter 12: Hive, Page No: 433, 434
 
 #### hive has default field, collection, map delimiter. you can only define you own delimiter(up to 3 delimiters)
