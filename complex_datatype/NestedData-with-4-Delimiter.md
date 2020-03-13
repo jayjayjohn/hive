@@ -1,6 +1,7 @@
 https://stackoverflow.com/questions/18812025/hive-nested-array-in-map-data-type
+Reference: Hadoop The Definitive Guide - Chapter 12: Hive, Page No: 433, 434
 
-#### 
+#### hive has default field, collection, map delimiter. you can only define you own delimiter(up to 3 delimiters)
 
 ```
 data.txt
@@ -9,9 +10,9 @@ id, name, dept_id,  phone
 
 // field separated by ,
 // array in dept_id separated by |
-// phone map should also by a array of map of {"mobile":"6465254455","6468879898") and {"work":"7189895485","5729986565"}
+// phone field should also by a array of map of {"mobile":"6465254455","6468879898") and {"work":"7189895485","5729986565"}
 // this data.txt will not work because mobile map contain its nested array 
-// so delimiter between 9898|work must not be '|', instead replace it with '\004'
+// so delimiter between 6468879898|work must NOT be '|', instead replace it with '\004' (hive will treat it as 4th delimiter)
 
 data.txt
 id, name, dept_id,  phone
