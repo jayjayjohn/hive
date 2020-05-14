@@ -32,7 +32,7 @@ select phone[mobile] from test_stg;
 
 ```
 ```
-Create table test_stg(employee_id INT, name STRING, abu ARRAY <String>, sabu MAP <String, ARRAY<INT>)
+Create table test_stg(employee_id INT, name STRING, abu ARRAY <String>, sabu MAP <String, ARRAY<INT>>)
 row format delimited fields terminated by '|'                                                              
 collection items terminated by '/'                                                                         
 map keys terminated by ':'; 
