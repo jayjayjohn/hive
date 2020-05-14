@@ -19,7 +19,7 @@ id, name, dept_id,  phone
 
 data.txt
 id, name, dept_id,  phone
-1,  jay,  58|14|21, mobile:6465254455|6468879898'\004'work:7189895485|5729986565
+1,  jay,  58|14|21, mobile:6465254455'\004'6468879898|work:7189895485'\004'5729986565
 
 
 Create table test_stg(id INT, name STRING, dept_id ARRAY <String>, phone MAP <String, ARRAY<INT>)
@@ -27,6 +27,8 @@ row format delimited
 fields terminated by ','                                                              
 collection items terminated by '|'                                                                         
 map keys terminated by ':'; 
+
+select phone[mobile] from test_stg;
 
 ```
 ```
