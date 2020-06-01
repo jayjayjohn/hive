@@ -1,3 +1,3 @@
     set my_variable = 'value'
 
-    ${hiveconf:my_variable}
+    select ${hiveconf:my_variable} from table
